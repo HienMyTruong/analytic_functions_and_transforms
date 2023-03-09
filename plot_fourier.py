@@ -1,7 +1,7 @@
 from sympy import fourier_series, pi, plot
 from sympy.abc import x
 
-f = x**2
+f = x**2 #Defined f(x) = x^2
 
 s = fourier_series(f, (x, -pi, pi))
 
@@ -17,4 +17,16 @@ p[0].line_color = (0, 0, 0)
 
 p[0].label = 'x'
 
-p[1].line_color = (0.7, 0.7, 0.7)
+p[1].line_color = (1, 0.7, 0.7)
+
+p[1].label = 'n=3'
+
+p[2].line_color = (0.5, 1, 0.5)
+
+p[2].label = 'n=5'
+
+p[3].line_color = (0.3, 0.3, 1)
+
+p[3].label = 'n=7'
+
+p.show()
