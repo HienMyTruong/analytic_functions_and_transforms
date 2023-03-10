@@ -11,7 +11,7 @@ def show_fourier(range1: float, range2: float, plot_range1: float, plot_range2: 
 
     s2 = s.truncate(n = 5)
 
-    s3 = s.truncate(n = 7)
+    s3 = s.truncate(n = 100)
 
     p = plot(f, s1, s2, s3, (x, plot_range1, plot_range2), show=False, legend=True)
 
@@ -29,9 +29,9 @@ def show_fourier(range1: float, range2: float, plot_range1: float, plot_range2: 
 
     p[3].line_color = (0.3, 0.3, 1)
 
-    p[3].label = 'n=7'
+    p[3].label = 'n=100'
 
     p.show()
 
 
-show_fourier(0, 2, -2, 2)
+show_fourier(0, 2, -20, 20)
